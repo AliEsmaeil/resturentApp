@@ -4,11 +4,12 @@ import 'package:jabalprog/core/app_colors.dart';
 import 'package:jabalprog/core/assets_paths.dart';
 import 'package:jabalprog/core/extensions/spacers_extension.dart';
 import 'package:jabalprog/core/text_styles.dart';
+import 'package:jabalprog/features/home/presentation/screens/home_screen.dart';
 import 'package:jabalprog/shared/asset_image.dart';
 import 'package:jabalprog/shared/gradient_button.dart';
 
 class WelcomeScreen extends StatelessWidget {
-  static const String routeName = '/welcome_screen';
+  static const String routeName = 'welcome_screen';
 
   const WelcomeScreen({super.key});
 
@@ -34,7 +35,8 @@ class WelcomeScreen extends StatelessWidget {
                   50.verticalSpacer,
                   GradientButton(
                       text: 'Go',
-                      onPressed: () => Navigator.pushNamed(context, '/home'),
+                      onPressed: () =>
+                          Navigator.pushNamed(context, HomeScreen.routeName),
                       margins: EdgeInsets.symmetric(horizontal: 20.w)),
                 ],
               ))

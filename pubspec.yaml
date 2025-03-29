@@ -7,10 +7,15 @@ environment:
   sdk: ^3.6.1
 
 dependencies:
+  build_runner: ^2.4.15
   flutter:
     sdk: flutter
   flutter_native_splash: ^2.4.4
   flutter_screenutil: ^5.9.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  hive_generator: ^2.0.1
+  provider: ^6.1.4
 
 dev_dependencies:
   flutter_test:
@@ -25,10 +30,14 @@ flutter:
     - assets/
     - assets/images/app/
     - assets/images/code/
+    - assets/images/code/mealCategories/
+    - assets/images/icons/
 
     #fonts
-    - assets/fonts/ubuntu/
-    - assets/fonts/ubuntu/Ubuntu-Light.ttf
-    - assets/fonts/ubuntu/Ubuntu-Regular.ttf
-    - assets/fonts/ubuntu/Ubuntu-Medium.ttf
-    - assets/fonts/ubuntu/Ubuntu-Bold.ttf
+  fonts:
+    - family: Ubuntu
+      fonts:
+        - asset: assets/fonts/ubuntu/Ubuntu-Light.ttf
+        - asset: assets/fonts/ubuntu/Ubuntu-Regular.ttf
+        - asset: assets/fonts/ubuntu/Ubuntu-Medium.ttf
+        - asset: assets/fonts/ubuntu/Ubuntu-Bold.ttf

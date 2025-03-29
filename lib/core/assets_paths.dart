@@ -14,4 +14,21 @@ final class AssetsPaths {
   static final onionImage = 'assets/images/code/onion.png';
   static final pizzaImage = 'assets/images/code/pizza.png';
   static final vegetablesImage = 'assets/images/code/vegetables.png';
+
+  /// meal Categories
+  static final String burgerCategory =
+      'assets/images/code/mealCategories/burger.png';
+  static final String firasCategory =
+      'assets/images/code/mealCategories/firas.png';
+  static final String hotdogCategory =
+      'assets/images/code/mealCategories/hotdog.png';
+  static final String pizzaCategory =
+      'assets/images/code/mealCategories/pizza.png';
+  static final String tacosCategory =
+      'assets/images/code/mealCategories/tacos.png';
+
+  // icons
+  static final String offerIcon = 'assets/images/icons/offer-icon.jpeg';
+  static final String bottomNavBar = 'assets/images/icons/bottom_nav_bar.png';
+  static final String userImage = 'assets/images/icons/me.png';
 }
