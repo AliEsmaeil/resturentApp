@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jabalprog/core/app_colors.dart';
 import 'package:jabalprog/core/text_styles.dart';
+import 'package:jabalprog/features/home/presentation/widgets/home_appbar/search_delegate.dart';
 
 class SearchField extends StatelessWidget {
   const SearchField({super.key});
@@ -14,7 +15,11 @@ class SearchField extends StatelessWidget {
           left: 20,
         ),
         child: TextFormField(
+          onTap: () =>
+              showSearch(context: context, delegate: CustomSearchDelegate()),
           autofocus: false,
+          canRequestFocus: false,
+          readOnly: true,
           decoration: InputDecoration(
             hintText: 'Search',
             contentPadding: const EdgeInsets.all(0),

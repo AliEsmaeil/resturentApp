@@ -1,20 +1,13 @@
-abstract class DrinksEntity {
-  final String id;
-  final String name;
-  final String imagePath;
-  final String description;
-  final double price;
-  final bool isFavorite;
+import 'package:jabalprog/features/home/domain/entities/food._entity.dart';
 
-  final bool isCart;
-
+abstract class DrinksEntity extends FoodEntity {
   DrinksEntity({
-    required this.id,
-    required this.name,
-    required this.imagePath,
-    required this.description,
-    required this.price,
-    required this.isFavorite,
-    required this.isCart,
+    required super.id,
+    required super.name,
+    required super.imagePath,
+    required super.description,
+    required super.price,
+    required super.isFavorite,
+    required super.isCart,
   });
 }

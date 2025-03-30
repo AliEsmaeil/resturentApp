@@ -1,7 +1,9 @@
 import 'package:jabalprog/core/assets_paths.dart';
 import 'package:jabalprog/features/home/data/models/category_model.dart';
 import 'package:jabalprog/features/home/data/models/drinks_model.dart';
+import 'package:jabalprog/features/home/data/models/ingredient_model.dart';
 import 'package:jabalprog/features/home/data/models/meal_model.dart';
+import 'package:jabalprog/features/home/domain/entities/ingredient_entity.dart';
 
 final class DataHolder {
   static final mealCategories = <CategoryModel>[
@@ -89,5 +91,22 @@ final class DataHolder {
         price: 24,
         isFavorite: false,
         isCart: false)
+  ];
+
+  static final mealIngredients = <IngredientEntity>[
+    IngredientModel(
+        id: '15', image: 'assets/images/code/bread.png', name: 'Bread'),
+    IngredientModel(
+        id: '16', image: 'assets/images/code/burger_meat.png', name: 'Meat'),
+    IngredientModel(
+        id: '18', image: 'assets/images/code/onion.png', name: 'Onion'),
+    IngredientModel(
+        id: '19',
+        image: 'assets/images/code/vegetables.png',
+        name: 'Vegetables'),
+    IngredientModel(
+        id: '20', image: 'assets/images/code/bread.png', name: 'Bread'),
+    IngredientModel(
+        id: '21', image: 'assets/images/code/burger_meat.png', name: 'Meat'),
   ];
 }

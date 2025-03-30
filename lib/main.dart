@@ -22,10 +22,10 @@ class MainApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (_) => CartController(),
+          create: (_) => CartController()..readCarts(),
         ),
         ChangeNotifierProvider(
-          create: (_) => FavoritesController(),
+          create: (_) => FavoritesController()..readFavorites(),
         ),
         ChangeNotifierProvider(
           create: (_) => HomeController(),
@@ -39,7 +39,7 @@ class MainApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           theme: ThemeManager.lightTheme,
           title: 'Restaurant App',
-          routes: MyRouter.routes,
+          //routes: MyRouter.routes,
           initialRoute: WelcomeScreen.routeName,
           onGenerateRoute: MyRouter().onGenerateRoute,
         ),

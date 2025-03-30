@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:jabalprog/core/app_colors.dart';
 import 'package:jabalprog/core/assets_paths.dart';
 import 'package:jabalprog/features/home/presentation/screens/home_screen.dart';
-import 'package:jabalprog/shared/asset_image.dart';
 import 'package:jabalprog/shared/custom_navigation_bar/centered_docked_button.dart';
 import 'package:jabalprog/shared/custom_navigation_bar/nav_bar_image.dart';
 

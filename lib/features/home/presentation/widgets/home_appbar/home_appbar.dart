@@ -12,7 +12,7 @@ PreferredSizeWidget appBarBuilder() {
     leading: SearchField(),
     leadingWidth: 130.w,
     backgroundColor: Colors.white,
-    elevation: 6,
+    elevation: 3,
     shadowColor: Colors.black,
     title: Text(
       'Inicio',

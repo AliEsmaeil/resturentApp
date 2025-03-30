@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:jabalprog/core/app_colors.dart';
+import 'package:jabalprog/features/cart/presentation/screens/cart_screen.dart';
 
 class CenteredDockedButton extends StatelessWidget {
   const CenteredDockedButton({super.key});
@@ -10,7 +11,7 @@ class CenteredDockedButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 7),
       child: IconButton(
-        onPressed: () {},
+        onPressed: () => Navigator.of(context).pushNamed(CartScreen.routeName),
         icon: Icon(
           Icons.shopping_basket_outlined,
           size: 25.w,

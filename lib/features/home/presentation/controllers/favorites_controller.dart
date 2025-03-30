@@ -6,6 +6,10 @@ final class FavoritesController with ChangeNotifier {
 
   List<String> get favorites => _favorites;
 
+  void readFavorites() async {
+    _favorites = await HiveFacade.instance.getFavoriteItems();
+  }
+
   void toggleFavorite(String item) async {
     if (!_favorites.contains(item)) {
       _favorites.add(item);
