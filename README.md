@@ -1,3 +1,5 @@
+[](assets/images/app/app-icon.png)
+
 # Resturent App
 
 This is a mobile application that enables users to explore meals and drinks and give them the ability to order whatever they need with a shining UI and animation experiement.
