@@ -1,6 +1,9 @@
-[](assets/images/app/app-icon.png)
 
-# Resturent App
+<p align="center">
+  <img src="assets/images/app/app-icon.png" alt="App Icon">
+</p>
+
+# Restaurant App
 
 This is a mobile application that enables users to explore meals and drinks and give them the ability to order whatever they need with a shining UI and animation experiement.
 
