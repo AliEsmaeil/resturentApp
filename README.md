@@ -4,17 +4,17 @@ This is a mobile application that enables users to explore meals and drinks and 
 
 Table of Contents
 
-### - Features and usage
+#### - Features and usage
 
-### - Technologies used
+#### - Technologies used
 
-### - File Hierarchy
+#### - File Hierarchy
 
-### - How it looks
+#### - How it looks
 
-### - How to install
+#### - How to install
 
-### - Code Extraction
+#### - Code Extraction
 
 ---
 
@@ -112,15 +112,14 @@ run this command in your terminal, where you wanna locate this project on your m
 1. ```
          git clone https://github.com/AliEsmaeil/resturentApp
    ```
-   open the project in your IDE
-2. ```
-   flutter clean
-   ```
-3.
+open the project in your IDE and run the following commands
 
-```
-flutter pub get
-```
+2. ```
+         flutter clean
+   ```
+3. ```
+         flutter pub get
+   ```
 
 You are ready, run!
 
