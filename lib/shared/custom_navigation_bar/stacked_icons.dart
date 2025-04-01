@@ -5,6 +5,7 @@ import 'package:jabalprog/core/assets_paths.dart';
 import 'package:jabalprog/features/home/presentation/screens/home_screen.dart';
 import 'package:jabalprog/shared/custom_navigation_bar/centered_docked_button.dart';
 import 'package:jabalprog/shared/custom_navigation_bar/nav_bar_image.dart';
+import 'package:jabalprog/shared/svg_image.dart';
 
 class StackedIcons extends StatelessWidget {
   const StackedIcons({super.key});
@@ -16,7 +17,7 @@ class StackedIcons extends StatelessWidget {
       children: [
         NavBarImage(),
         Positioned(
-            left: 20.w,
+            left: 25.w,
             right: 20.w,
             top: 0,
             bottom: 0,
@@ -27,20 +28,19 @@ class StackedIcons extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       IconButton(
-                        icon: Icon(
-                          Icons.home_outlined,
-                          color: ModalRoute.of(context)?.settings.name ==
-                                  HomeScreen.routeName
-                              ? AppColors.cyanColor
-                              : Colors.grey,
-                        ),
+                        icon: SvgImage(
+                            color: AppColors.cyanColor,
+                            imagePath: AssetsPaths.homeIcon),
                         onPressed: () {
-                          // Handle home button press
+                          Navigator.of(context).pushNamed(HomeScreen.routeName);
                         },
                       ),
                       IconButton(
-                        icon:
-                            Icon(Icons.storefront_outlined, color: Colors.grey),
+                        icon: SvgImage(
+                          color: Colors.grey,
+                          imagePath: AssetsPaths.shopIcon,
+                          dimension: 20,
+                        ),
                         onPressed: () {
                           // Handle search button press
                         },

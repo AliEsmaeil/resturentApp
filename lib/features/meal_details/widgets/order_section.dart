@@ -5,7 +5,7 @@ import 'package:jabalprog/core/extensions/context_extension.dart';
 import 'package:jabalprog/core/extensions/spacers_extension.dart';
 import 'package:jabalprog/core/text_styles.dart';
 import 'package:jabalprog/features/home/domain/entities/food._entity.dart';
-import 'package:jabalprog/features/home/presentation/controllers/cart_controller.dart';
+import 'package:jabalprog/features/cart/presentation/controllers/cart_controller.dart';
 import 'package:jabalprog/shared/gradient_button.dart';
 import 'package:provider/provider.dart';
 

@@ -3,6 +3,7 @@ import 'package:jabalprog/features/home/data/models/category_model.dart';
 import 'package:jabalprog/features/home/data/models/drinks_model.dart';
 import 'package:jabalprog/features/home/data/models/ingredient_model.dart';
 import 'package:jabalprog/features/home/data/models/meal_model.dart';
+import 'package:jabalprog/features/home/domain/entities/food._entity.dart';
 import 'package:jabalprog/features/home/domain/entities/ingredient_entity.dart';
 
 final class DataHolder {
@@ -109,4 +110,18 @@ final class DataHolder {
     IngredientModel(
         id: '21', image: 'assets/images/code/burger_meat.png', name: 'Meat'),
   ];
+
+  static FoodEntity getItemById({required String id}) {
+    for (var meal in meals) {
+      if (meal.id == id) {
+        return meal;
+      }
+    }
+    for (var drink in drinks) {
+      if (drink.id == id) {
+        return drink;
+      }
+    }
+    return meals.first;
+  }
 }

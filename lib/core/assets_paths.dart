@@ -31,4 +31,9 @@ final class AssetsPaths {
   static final String offerIcon = 'assets/images/icons/offer-icon.jpeg';
   static final String bottomNavBar = 'assets/images/icons/bottom_nav_bar.png';
   static final String userImage = 'assets/images/icons/me.png';
+
+// svg icons
+  static final String homeIcon = 'assets/images/icons/home-icon.svg';
+  static final String shopIcon = 'assets/images/icons/shop-icon.svg';
+  static final String basketIcon = 'assets/images/icons/basket-icon.svg';
 }
